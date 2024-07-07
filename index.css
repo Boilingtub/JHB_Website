@@ -37,6 +37,7 @@ ul.topnav li a:hover, .dropdown:hover .dropdownbutton {
     z-index:1;
 }
 
+
 ul.topnav .dropdown-content a {
     color: white;
     padding: 12px 16px;
@@ -63,6 +64,45 @@ li.dropdown:hover .dropdown-content {
     display: block;
 }
 
+.description-content {
+    display: none;
+    position: absolute;
+    float: left;
+    margin: 0 auto;
+    background-color: #2a002a;
+    left: 0;
+    top: 47px;
+    height: 100%;
+    right: 0;
+    color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    z-index:1;
+}
+
+ul.topnav .dropdown-content a .description-content p {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover .description-content {
+    display: block; 
+}
+
+.first-dropdown li.dropdown .dropdown-content a .description-content {
+    left:395px;
+}
+
+.second-dropdown li.dropdown .dropdown-content a .description-content {
+    left:472px;
+}
+
+.third-dropdown li.dropdown .dropdown-content a .description-content {
+    left:694px;
+}
+
 ul.topnav li a.active {
     background-color: #04AA6D;
 }
@@ -70,7 +110,6 @@ ul.topnav li a.active {
 ul.topnav li.right{
   float: right;
 }
-
 
 
 .responsive-iframe-container {
